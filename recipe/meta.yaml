@@ -50,6 +50,7 @@ requirements:
     - twisted
     - urllib3
     - pyarrow
+    - libarrow-flight
 
 test:
   imports:
