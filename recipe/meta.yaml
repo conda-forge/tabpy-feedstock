@@ -1,5 +1,5 @@
 {% set name = "tabpy" %}
-{% set version = "2.13.0" %}
+{% set version = "2.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tabpy-{{ version }}.tar.gz
-  sha256: e9985342e2481ff93c71d94fa89e362d11083a78eb45b9f4d5f64bb9d1350568
+  sha256: 4cf07d46879026dffac1e39ed50e26f434f4cf73e630a47615af3a61d43a3d11
 
 build:
   entry_points:
@@ -16,7 +16,7 @@ build:
     - tabpy-deploy-models=tabpy.models.deploy_models:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
