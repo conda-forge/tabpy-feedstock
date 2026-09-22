@@ -1,5 +1,5 @@
 {% set name = "tabpy" %}
-{% set version = "2.15.0" %}
+{% set version = "2.15.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/tabpy-{{ version }}.tar.gz
-  sha256: a5dcc95d552d032ce77db51b2e0f77c85be7ec39513e1d8788435f171877e8d1
+  sha256: bc9fdf1f460e90519edc2c40cb64b49d14a3d6b20168374669407a8370562479
 
 build:
   entry_points:
